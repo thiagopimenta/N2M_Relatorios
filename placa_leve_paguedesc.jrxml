@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="leve_pague" pageWidth="612" pageHeight="850" columnWidth="592" leftMargin="0" rightMargin="20" topMargin="0" bottomMargin="0" uuid="3aa5d243-73ac-4479-aaba-f6a5e855a845">
+	<property name="ireport.zoom" value="0.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select 'BOMB LACTA SONHO VALSA UN' DESCPROD,
+ 3 QTDAP,
+'CX' EMB,
+3.99 PRCVAREJO,
+02.99 PRCATAC,
+7891234567 EAN,
+249.59 PRCFIDELIDADE,
+current_date DTOFTINI,
+current_date DTOFTFIM,
+current_date DTEMIS,
+4 QTDLEV,
+3 QTDPAG,
+2.99 PRCLEVPAG,
+
+'BOMB LACTA SONHO VALSA UN' DESCPROD1,
+ 3 QTDAP1,
+'CX' EMB1,
+3.99 PRCVAREJO1,
+02.99 PRCATAC1,
+7891234567 EAN1,
+249.59 PRCFIDELIDADE1,
+current_date DTOFTINI1,
+current_date DTOFTFIM1,
+current_date DTEMIS1,
+4 QTDLEV1,
+3 QTDPAG1,
+2.99 PRCLEVPAG1]]>
+	</queryString>
+	<field name="DESCPROD" class="java.lang.String"/>
+	<field name="QTDAP" class="java.lang.String"/>
+	<field name="EMB" class="java.lang.String">
+		<fieldDescription><![CDATA[Embalagem]]></fieldDescription>
+	</field>
+	<field name="PRCVAREJO" class="java.lang.String"/>
+	<field name="PRCATAC" class="java.lang.String"/>
+	<field name="EAN" class="java.lang.String">
+		<fieldDescription><![CDATA[Ean]]></fieldDescription>
+	</field>
+	<field name="PRCFIDELIDADE" class="java.lang.String"/>
+	<field name="DTOFTINI" class="java.lang.String"/>
+	<field name="DTOFTFIM" class="java.lang.String"/>
+	<field name="DTEMIS" class="java.lang.String"/>
+	<field name="QTDLEV" class="java.lang.String"/>
+	<field name="QTDPAG" class="java.lang.String"/>
+	<field name="PRCLEVPAG" class="java.lang.String"/>
+	<field name="DESCPROD1" class="java.lang.String"/>
+	<field name="QTDAP1" class="java.lang.String"/>
+	<field name="EMB1" class="java.lang.String"/>
+	<field name="PRCVAREJO1" class="java.lang.String"/>
+	<field name="PRCATAC1" class="java.lang.String"/>
+	<field name="EAN1" class="java.lang.String"/>
+	<field name="PRCFIDELIDADE1" class="java.lang.String"/>
+	<field name="DTOFTINI1" class="java.lang.String"/>
+	<field name="DTOFTFIM1" class="java.lang.String"/>
+	<field name="DTEMIS1" class="java.lang.String"/>
+	<field name="QTDLEV1" class="java.lang.String"/>
+	<field name="QTDPAG1" class="java.lang.String"/>
+	<field name="PRCLEVPAG1" class="java.lang.String"/>
+	<field name="field1" class="java.lang.String"/>
+	<field name="DESCLEVPAG" class="java.lang.String"/>
+	<field name="DESCLEVPAG1" class="java.lang.String"/>
+	<detail>
+		<band height="850" splitType="Stretch">
+			<rectangle>
+				<reportElement x="421" y="22" width="97" height="795" uuid="2b3157f0-4ba5-4a7a-891b-881614bcdbf7"/>
+			</rectangle>
+			<textField>
+				<reportElement x="186" y="0" width="100" height="850" uuid="1bffb7ad-84af-4790-8bf3-bc7634a7e671"/>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="32" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESCPROD}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="561" y="543" width="30" height="272" uuid="1bc3b3e3-b954-4bb4-89cb-207f6883690b"/>
+				<textElement rotation="Left">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{EAN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="471" y="22" width="66" height="795" uuid="cfac3ed2-499f-4d23-93fe-3f686a8eeef5"/>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="35" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["R$ " +$F{PRCVAREJO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="314" y="0" width="64" height="850" uuid="c298b00b-e5c9-47e4-96a3-5a640a630294"/>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="25" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nesta promoção a unidade sai a ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="561" y="26" width="31" height="438" uuid="c4c67ffe-ed93-42a9-b447-f72b180010be"/>
+				<textElement textAlignment="Right" rotation="Left">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DTOFTINI} == null ? "" : "Validade oferta:" +  $F{DTOFTINI} +  " até "
++ $F{DTOFTFIM}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="344" y="0" width="92" height="850" uuid="e74acc32-fa06-45c3-b330-389a471b15fc"/>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="55" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["R$ " + $F{PRCLEVPAG}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="275" y="0" width="49" height="850" uuid="72d00660-cf0d-4be2-820a-008d7155832f"/>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="25" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" Ganhe  " +$F{DESCLEVPAG} + "% de desconto na "  + $F{QTDLEV} +  "ª  embalagem"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="430" y="22" width="25" height="795" uuid="224fb73e-32c3-4f1c-88ba-9fd9ab82e89a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="Left">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Preço Unitário]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>
