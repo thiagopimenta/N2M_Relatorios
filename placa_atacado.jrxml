@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="placa_atacado" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f2b22784-204e-484f-a7a9-54e582121e54">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="231"/>
+	<queryString>
+		<![CDATA[select 'ABACAXI' descricao,
+3 qtdapartir,
+'CX' emb,
+101.00 prcVarejo,
+100.00 prcAtacado,
+7891234567 ean,
+100.99 prcfidelidade,
+current_date dtini,
+current_date dtfim,
+
+'ABACAXI' descricao1,
+3 qtdapartir1,
+'CX' emb1,
+101.00 prcVarejo1,
+100.00 prcAtacado1,
+7891234567 ean1,
+100.99 prcfidelidade1,
+current_date dtini1,
+current_date dtfim1,
+
+'ABACAXI' descricao2,
+3 qtdapartir2,
+'CX' emb2,
+101.00 prcVarejo2,
+100.00 prcAtacado2,
+7891234567 ean2,
+100.99 prcfidelidade2,
+current_date dtini2,
+current_date dtfim2,
+
+
+'ABACAXI' descricao3,
+3 qtdapartir3,
+'CX' emb3,
+101.00 prcVarejo3,
+100.00 prcAtacado3,
+7891234567 ean3,
+100.99 prcfidelidade3,
+current_date dtini3,
+current_date dtfim3]]>
+	</queryString>
+	<field name="descricao" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="qtdapartir" class="java.lang.Long"/>
+	<field name="emb" class="java.lang.String"/>
+	<field name="prcVarejo" class="java.math.BigDecimal"/>
+	<field name="prcAtacado" class="java.math.BigDecimal"/>
+	<field name="ean" class="java.lang.Long"/>
+	<field name="prcfidelidade" class="java.math.BigDecimal"/>
+	<field name="dtini" class="java.sql.Date"/>
+	<field name="dtfim" class="java.sql.Date"/>
+	<field name="descricao1" class="java.lang.String"/>
+	<field name="qtdapartir1" class="java.lang.Long"/>
+	<field name="emb1" class="java.lang.String"/>
+	<field name="prcVarejo1" class="java.math.BigDecimal"/>
+	<field name="prcAtacado1" class="java.math.BigDecimal"/>
+	<field name="ean1" class="java.lang.Long"/>
+	<field name="prcfidelidade1" class="java.math.BigDecimal"/>
+	<field name="dtini1" class="java.sql.Date"/>
+	<field name="dtfim1" class="java.sql.Date"/>
+	<field name="descricao2" class="java.lang.String"/>
+	<field name="qtdapartir2" class="java.lang.Long"/>
+	<field name="emb2" class="java.lang.String"/>
+	<field name="prcVarejo2" class="java.math.BigDecimal"/>
+	<field name="prcAtacado2" class="java.math.BigDecimal"/>
+	<field name="ean2" class="java.lang.Long"/>
+	<field name="prcfidelidade2" class="java.math.BigDecimal"/>
+	<field name="dtini2" class="java.sql.Date"/>
+	<field name="dtfim2" class="java.sql.Date"/>
+	<field name="descricao3" class="java.lang.String"/>
+	<field name="qtdapartir3" class="java.lang.Long"/>
+	<field name="emb3" class="java.lang.String"/>
+	<field name="prcVarejo3" class="java.math.BigDecimal"/>
+	<field name="prcAtacado3" class="java.math.BigDecimal"/>
+	<field name="ean3" class="java.lang.Long"/>
+	<field name="prcfidelidade3" class="java.math.BigDecimal"/>
+	<field name="dtini3" class="java.sql.Date"/>
+	<field name="dtfim3" class="java.sql.Date"/>
+	<title>
+		<band height="752" splitType="Stretch">
+			<rectangle>
+				<reportElement x="317" y="566" width="208" height="53" uuid="f899fbdf-500c-498a-84de-d310341ca425"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="27" y="566" width="208" height="53" uuid="5b25dd61-3ffb-4b54-8695-97fc69470d60"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="317" y="269" width="208" height="51" uuid="d95cf2e8-fa34-4752-bd43-902acd260ed0"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="27" y="269" width="208" height="51" uuid="0846d8b2-43a2-48cf-9106-5dba6dc92167"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="147" width="260" height="36" uuid="aea72e3e-8e31-4ca9-acad-a5e9bc789b64"/>
+				<textElement textAlignment="Center">
+					<font size="25" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{descricao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="147" width="312" height="36" uuid="71e0765f-21e5-4648-9efa-626f6bdbf3a2"/>
+				<textElement textAlignment="Center">
+					<font size="25" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{descricao1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="191" width="312" height="26" uuid="78aaf5d4-ebd9-4e88-bc51-fd19eedce1ae"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["A partir de " + $F{qtdapartir1} + " " + $F{emb1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="191" width="260" height="26" uuid="799e98c6-10c1-45c1-bc81-7445318b7b70"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["A partir de " + $F{qtdapartir} + " " + $F{emb}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="232" width="260" height="36" uuid="0bf98c51-b8f9-40c7-ae68-c6fc918f65d6"/>
+				<textElement textAlignment="Center">
+					<font size="28" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{prcAtacado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="526" width="260" height="36" uuid="c2df727d-b616-48e3-aeac-7eac8a862c7d"/>
+				<textElement textAlignment="Center">
+					<font size="28" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{prcAtacado2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="232" width="312" height="36" uuid="f8b6ceea-74e7-427f-a637-2008d42af7e0"/>
+				<textElement textAlignment="Center">
+					<font size="28" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{prcAtacado1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="317" y="284" width="208" height="37" uuid="836506cc-8f2c-4b15-84bf-cea11d74ac04"/>
+				<textElement textAlignment="Center">
+					<font size="28" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["R\$ " + $F{prcVarejo1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="27" y="283" width="208" height="43" uuid="8bb047cc-e278-4efe-a75c-6fc4fa1a3e79"/>
+				<textElement textAlignment="Center">
+					<font size="28" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["R\$ " + $F{prcVarejo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="493" width="260" height="26" uuid="7ec0b0bd-1526-434a-b175-bf018b4677d5"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["A partir de " + $F{qtdapartir2} + " " + $F{emb2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="493" width="312" height="26" uuid="c765a78e-6424-42e7-a255-c23ecaad7987"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["A partir de " + $F{qtdapartir3} + " " + $F{emb3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="445" width="312" height="36" uuid="b4732cee-0975-4df9-80ea-c47b883972ec"/>
+				<textElement textAlignment="Center">
+					<font size="25" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{descricao3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="445" width="260" height="36" uuid="9430af14-6eea-4220-970c-d904e46da27d"/>
+				<textElement textAlignment="Center">
+					<font size="25" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{descricao2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="526" width="312" height="36" uuid="1c481f91-aa53-40e1-9787-21112f46e3cc"/>
+				<textElement textAlignment="Center">
+					<font size="28" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{prcAtacado3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="317" y="582" width="208" height="43" uuid="781bf9fb-e1e8-47fe-a6cd-08bb6a053ac1"/>
+				<textElement textAlignment="Center">
+					<font size="28" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["R\$ " + $F{prcVarejo3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="27" y="582" width="208" height="43" uuid="0fc5b7f2-e061-4329-ab1b-868ea5642a21"/>
+				<textElement textAlignment="Center">
+					<font size="28" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["R\$ " + $F{prcVarejo2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="27" y="269" width="208" height="20" uuid="d0fedaf2-3fcb-47a5-a1ce-e46e71bff433"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" Varejo: "]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="317" y="269" width="208" height="20" uuid="51cbe04e-3636-4dbf-ac64-1cabd3a54c85"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" Varejo:"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="27" y="566" width="208" height="20" uuid="f4a817c5-68b3-4b1e-9a94-444de804359b"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" Varejo:"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="317" y="566" width="208" height="20" uuid="cce9cf62-8827-4057-8443-b61d7888fc33"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Varejo:"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="640" width="101" height="14" uuid="4465d1e9-0303-40f4-b101-4d057cee037b"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ean3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-21" y="640" width="127" height="14" uuid="e85568b0-20e2-4ae2-ab3d-4e6fb7a119cb"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ean2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="340" width="101" height="14" uuid="1a9abe0d-d342-4eef-bc4b-a51723dd7963"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ean1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-21" y="340" width="127" height="14" uuid="9da6ebdd-88e5-4eca-8414-60a2b72b84d8"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ean}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="170" y="340" width="118" height="14" uuid="1502353a-c72d-4ff6-a325-66690e82dca0"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dtini}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="436" y="340" width="139" height="14" uuid="ff0284dd-3507-4887-afa8-b2e0b0ae1a76"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dtini1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="436" y="640" width="136" height="13" uuid="d48ffa0d-1939-4b16-ae10-440440622987"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dtini3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="170" y="640" width="118" height="14" uuid="9f47c57f-d57f-4ef8-8b34-27f5c139d709"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dtini2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>
