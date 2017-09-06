@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="placa_testeVarejo" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a221dd8e-5116-423e-954b-3be71b77716a">
+	<property name="ireport.zoom" value="0.9090909090909091"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="237"/>
+	<queryString>
+		<![CDATA[select 'BATATA' DESCPROD,
+3 QTDAPARTIR,
+'CX' EMB,
+3.19 PRCVAREJO,
+100.00 PRCATACADO,
+0000000001505 EAN,
+3.06 PRCFIDELIDADE,
+current_date DTEMIS,
+current_date DTFIM,
+4 QTDLEV,
+3 QTDPAG,
+2.99 PRCLEVPAG,
+
+'PEITO SADIA PERU DEF GDE PC KG' DESCPROD1,
+3 QTDAPARTIR1,
+'CX' EMB1,
+3.19 PRCVAREJO1,
+100.00 PRCATACADO1,
+0000000001505 EAN1,
+3.06 PRCFIDELIDADE1,
+current_date DTEMIS1,
+current_date DTFIM1,
+4 QTDLEV1,
+3 QTDPAG1,
+2.99 PRCLEVPAG1,
+
+'JILO' DESCPROD2,
+3 QTDAPARTIR2,
+'CX' EMB2,
+3.19 PRCVAREJO2,
+100.00 PRCATACADO2,
+0000000001505 EAN2,
+3.06 PRCFIDELIDADE2,
+current_date DTEMIS2,
+current_date DTFIM2,
+4 QTDLEV2,
+3 QTDPAG2,
+2.99 PRCLEVPAG2,
+
+'ABOBORA HIBRIDA PARTIDA KG' DESCPROD3,
+3 QTDAPARTIR3,
+'CX' EMB3,
+3.19 PRCVAREJO3,
+100.00 PRCATACADO3,
+0000000001505 EAN3,
+3.06 PRCFIDELIDADE3,
+current_date DTEMIS3,
+current_date DTFIM3,
+4 QTDLEV3,
+3 QTDPAG3,
+2.99 PRCLEVPAG3]]>
+	</queryString>
+	<field name="DESCPROD" class="java.lang.String"/>
+	<field name="QTDAPARTIR" class="java.lang.String"/>
+	<field name="EMB" class="java.lang.String"/>
+	<field name="PRCVAREJO" class="java.lang.String"/>
+	<field name="PRCATACADO" class="java.lang.String"/>
+	<field name="EAN" class="java.lang.String"/>
+	<field name="PRCFIDELIDADE" class="java.lang.String"/>
+	<field name="DTEMIS" class="java.lang.String"/>
+	<field name="DTFIM" class="java.lang.String"/>
+	<field name="QTDLEV" class="java.lang.String"/>
+	<field name="QTDPAG" class="java.lang.String"/>
+	<field name="PRCLEVPAG" class="java.lang.String"/>
+	<field name="DESCPROD1" class="java.lang.String"/>
+	<field name="QTDAPARTIR1" class="java.lang.String"/>
+	<field name="EMB1" class="java.lang.String"/>
+	<field name="PRCVAREJO1" class="java.lang.String"/>
+	<field name="PRCATACADO1" class="java.lang.String"/>
+	<field name="EAN1" class="java.lang.String"/>
+	<field name="PRCFIDELIDADE1" class="java.lang.String"/>
+	<field name="DTEMIS1" class="java.lang.String"/>
+	<field name="DTFIM1" class="java.lang.String"/>
+	<field name="QTDLEV1" class="java.lang.String"/>
+	<field name="QTDPAG1" class="java.lang.String"/>
+	<field name="PRCLEVPAG1" class="java.lang.String"/>
+	<field name="DESCPROD2" class="java.lang.String"/>
+	<field name="QTDAPARTIR2" class="java.lang.String"/>
+	<field name="EMB2" class="java.lang.String"/>
+	<field name="PRCVAREJO2" class="java.lang.String"/>
+	<field name="PRCATACADO2" class="java.lang.String"/>
+	<field name="EAN2" class="java.lang.String"/>
+	<field name="PRCFIDELIDADE2" class="java.lang.String"/>
+	<field name="DTEMIS2" class="java.lang.String"/>
+	<field name="DTFIM2" class="java.lang.String"/>
+	<field name="QTDLEV2" class="java.lang.String"/>
+	<field name="QTDPAG2" class="java.lang.String"/>
+	<field name="PRCLEVPAG2" class="java.lang.String"/>
+	<field name="DESCPROD3" class="java.lang.String"/>
+	<field name="QTDAPARTIR3" class="java.lang.String"/>
+	<field name="EMB3" class="java.lang.String"/>
+	<field name="PRCVAREJO3" class="java.lang.String"/>
+	<field name="PRCATACADO3" class="java.lang.String"/>
+	<field name="EAN3" class="java.lang.String"/>
+	<field name="PRCFIDELIDADE3" class="java.lang.String"/>
+	<field name="DTEMIS3" class="java.lang.String"/>
+	<field name="DTFIM3" class="java.lang.String"/>
+	<field name="QTDLEV3" class="java.lang.String"/>
+	<field name="QTDPAG3" class="java.lang.String"/>
+	<field name="PRCLEVPAG3" class="java.lang.String"/>
+	<field name="DESCLEVPAG" class="java.lang.String"/>
+	<field name="DESCLEVPAG1" class="java.lang.String"/>
+	<field name="DESCLEVPAG2" class="java.lang.String"/>
+	<field name="DESCLEVPAG3" class="java.lang.String"/>
+	<field name="DTOFTINI" class="java.lang.String"/>
+	<field name="DTOFTINI1" class="java.lang.String"/>
+	<field name="DTOFTINI2" class="java.lang.String"/>
+	<field name="DTOFTINI3" class="java.lang.String"/>
+	<field name="DTOFTFIM" class="java.lang.String"/>
+	<field name="DTOFTFIM1" class="java.lang.String"/>
+	<field name="DTOFTFIM2" class="java.lang.String"/>
+	<field name="DTOFTFIM3" class="java.lang.String"/>
+	<title>
+		<band height="802" splitType="Stretch">
+			<rectangle>
+				<reportElement x="305" y="285" width="219" height="49" uuid="b95958a6-812e-4438-9683-fc72d90e40bb"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="34" y="285" width="219" height="49" uuid="a1de9381-718f-4a0b-a0cb-a601553559f8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="35" y="661" width="219" height="49" uuid="ca70c606-1971-4423-8700-8c667415dbe5"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="305" y="661" width="219" height="49" uuid="1a4c4555-b139-405e-be62-f960202ef1d5"/>
+			</rectangle>
+			<textField>
+				<reportElement x="1" y="249" width="285" height="38" uuid="34ff117e-de68-4592-ad65-e2bd0cce29fd"/>
+				<textElement textAlignment="Center">
+					<font size="30" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PRCLEVPAG}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="143" y="335" width="142" height="20" uuid="94a7a55e-5886-4ec2-a27e-8a033af183c0"/>
+				<textElement textAlignment="Center">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{EAN}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="13" y="337" width="164" height="20" uuid="ce1dde2d-610d-4bf0-b262-827d23e5057e"/>
+				<textElement textAlignment="Center">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Validade oferta:" + $F{DTOFTINI} +  " até "
++ $F{DTOFTFIM}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="5" y="145" width="260" height="63" uuid="643e0d98-bbfd-40cd-9046-f90acb2b4cd2"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESCPROD}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="283" y="144" width="260" height="63" uuid="8b7f1f4a-d957-4e35-b25f-385c32a03ae5"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESCPROD1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="406" y="335" width="149" height="20" uuid="efe8ee5d-ea36-4fc7-8a43-739b62426f21"/>
+				<textElement textAlignment="Center">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{EAN1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="286" y="249" width="270" height="38" uuid="60005a1d-fba3-4859-ae67-56f2cb5cadbe"/>
+				<textElement textAlignment="Center">
+					<font size="30" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PRCLEVPAG1}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="285" y="337" width="153" height="20" uuid="a4f8c42c-4d1e-4b7b-a0f1-b6977b5bc112"/>
+				<textElement textAlignment="Center">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DTOFTINI1} == null ? "" : "Validade oferta:" + $F{DTOFTINI1} +  " até "
++ $F{DTOFTFIM1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="624" width="285" height="48" uuid="3537faec-453c-45fc-8b5b-beb57467dd00"/>
+				<textElement textAlignment="Center">
+					<font size="30" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PRCLEVPAG2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="143" y="711" width="142" height="20" uuid="55ae76e7-6c17-400e-a2d2-a3879aa4f6da"/>
+				<textElement textAlignment="Center">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{EAN2}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="13" y="711" width="164" height="20" uuid="b68210ec-54d2-4055-b397-36c65a3bea64"/>
+				<textElement textAlignment="Center">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DTOFTINI2} == null ? "" : "Validade oferta:" + $F{DTOFTINI2} +  " até "
++ $F{DTOFTFIM2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="5" y="518" width="260" height="72" uuid="fab22ade-8c05-4263-ae10-3953e86dd74c"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESCPROD2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="284" y="624" width="270" height="48" uuid="e1ed2fc6-931e-43b2-bf5d-ea53a3f600b2"/>
+				<textElement textAlignment="Center">
+					<font size="30" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PRCLEVPAG3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="283" y="518" width="260" height="72" uuid="fa54878b-0de7-4d2f-a9ae-c1886a72dd76"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESCPROD3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="427" y="711" width="128" height="20" uuid="b339b6b2-12c8-4190-b073-bdbb1912bab6"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{EAN3}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="285" y="711" width="163" height="20" uuid="a7a284ee-5262-4bc9-b58f-1b4f15d82057"/>
+				<textElement textAlignment="Center">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DTOFTINI3} == null ? "" : "Validade oferta:" + $F{DTOFTINI3} +  " até "
++ $F{DTOFTFIM3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="323" y="257" width="24" height="24" uuid="87de8f70-88d2-4ea3-a3ba-af1347a8d77b"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["R$"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="35" y="221" width="219" height="18" uuid="0b5df576-cfd8-4403-a49a-42149ff1409b"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" Ganhe  " +$F{DESCLEVPAG} + "% de desconto na "  + $F{QTDLEV} +  "ª  embalagem"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="305" y="220" width="219" height="18" uuid="4c090726-9981-47bc-b7cd-b8d3cf4b72b1"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESCLEVPAG1} == null ? "" :" Ganhe  " + $F{DESCLEVPAG1} + "% de desconto na "
++ $F{QTDLEV1} + "ª  embalagem"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="35" y="594" width="219" height="18" uuid="e5983224-2464-479c-a0d0-c5be54572007"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESCLEVPAG2} == null ? "" :" Ganhe  " + $F{DESCLEVPAG2} + "% de desconto na "
++ $F{QTDLEV2} + "ª  embalagem"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="305" y="594" width="219" height="18" uuid="b961f19f-8f7a-4137-9db1-91d693f0a42a"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESCLEVPAG3} == null ? "" :" Ganhe  " + $F{DESCLEVPAG3} + "% de desconto na "
++ $F{QTDLEV3} + "ª  embalagem"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="35" y="239" width="218" height="20" uuid="e54b817f-8b2e-4da3-9444-d39719491640"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nesta promoção a unidade sai a]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="305" y="239" width="219" height="20" uuid="09a16579-39e8-4631-9c00-cc187125950d"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nesta promoção a unidade sai a]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="613" width="218" height="20" uuid="518b4a99-b8f7-4699-be33-4ee2433e6800"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nesta promoção a unidade sai a]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="306" y="612" width="218" height="20" uuid="d130221f-1ee5-45f1-ad0b-1427d1c4f93b"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nesta promoção a unidade sai a]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="56" y="258" width="24" height="24" uuid="9eb80ec1-bb25-4b93-a022-3a6f0d16d642"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["R$"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="56" y="632" width="24" height="24" uuid="dbb9f068-9010-4703-a150-a86ae3fdd21a"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["R$"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="323" y="632" width="24" height="24" uuid="a39c9863-9de2-4985-a5d0-6236b5681e95"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["R$"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="36" y="285" width="217" height="20" uuid="036e9eee-cf26-44e5-b3d8-80abe74e24bd"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Preço Unitário:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="305" y="285" width="217" height="20" uuid="0e942945-31b8-46cf-bc7d-171366a66f0c"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Preço Unitário:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="37" y="662" width="217" height="20" uuid="6edb766e-c0f1-41b1-a4ac-0358eb044dbd"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Preço Unitário:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="305" y="662" width="217" height="20" uuid="c9b07612-b71a-4bfa-8db8-101274d83e9f"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Preço Unitário:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="34" y="294" width="219" height="43" uuid="6b54b4bb-97fe-4646-bab3-4ce948172bdc"/>
+				<textElement textAlignment="Center">
+					<font size="30" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PRCVAREJO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="37" y="672" width="216" height="45" uuid="60e3a43b-ed66-4798-8507-2ab235d8161f"/>
+				<textElement textAlignment="Center">
+					<font size="30" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PRCVAREJO2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="306" y="294" width="218" height="40" uuid="cebd2807-f11f-47d7-97bf-60918987271b"/>
+				<textElement textAlignment="Center">
+					<font size="30" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PRCVAREJO1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="306" y="672" width="216" height="45" uuid="544f52f2-4fae-4039-b028-10ea01055eaf"/>
+				<textElement textAlignment="Center">
+					<font size="30" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PRCVAREJO3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="45" y="299" width="20" height="20" uuid="7d75bbb2-feeb-4d7b-9d0c-a77036ea6cb1"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[R$]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="299" width="20" height="20" uuid="c93c662a-af6c-4404-9664-6767d229d528"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[R$]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="45" y="676" width="20" height="20" uuid="75fd6b7e-c69e-4c3a-8150-e46d6cf1cff9"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[R$]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="676" width="20" height="20" uuid="af5ade26-def2-4ae3-85e7-efee891891e9"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[R$]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

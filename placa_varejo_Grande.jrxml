@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="placa_garantido" pageWidth="612" pageHeight="800" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="88acd970-8ed1-43ff-9093-e11e8ef47275">
+	<property name="ireport.zoom" value="0.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select 'BATATA' descprod,
+3 qtdapartir,
+'CX' emb,
+1150.15 prcVarejo,
+1100.10 prcAtacado,
+0000000001505 ean,
+1100.10 prcfidelidade,
+current_date DTOFTINI,
+current_date DTOFTFIM,
+
+'PEITO SADIA PERU DEF GDE PC KG' descprod1,
+3 qtdapartir1,
+'CX' emb1,
+54.90prcVarejo1,
+9.00 prcAtacado1,
+0000000002604 ean1,
+54.70 prcfidelidade1,
+current_date DTOFTINI1,
+current_date DTOFTFIM1,
+
+'JILO' descprod2,
+3 qtdapartir2,
+'CX' emb2,
+2.99prcVarejo2,
+9.00 prcAtacado2,
+0000000001404 ean2,
+2.70 prcfidelidade2,
+current_date DTOFTINI2,
+current_date DTOFTFIM2,
+
+
+'ABOBORA HIBRIDA PARTIDA KG' descprod3,
+3 qtdapartir3,
+'CX' emb3,
+1.59 prcVarejo3,
+9.00 prcAtaca,
+0000000002504 ean3,
+1.40prcfidelidade3,
+current_date DTOFTINI3,
+current_date DTOFTFIM3]]>
+	</queryString>
+	<field name="descprod" class="java.lang.String"/>
+	<field name="qtdapartir" class="java.lang.Long"/>
+	<field name="emb" class="java.lang.String"/>
+	<field name="prcVarejo" class="java.math.BigDecimal"/>
+	<field name="prcAtacado" class="java.math.BigDecimal"/>
+	<field name="ean" class="java.lang.Long"/>
+	<field name="prcfidelidade" class="java.math.BigDecimal"/>
+	<field name="DTOFTINI" class="java.lang.String"/>
+	<field name="DTOFTFIM" class="java.lang.String"/>
+	<field name="descprod1" class="java.lang.String"/>
+	<field name="qtdapartir1" class="java.lang.Long"/>
+	<field name="emb1" class="java.lang.String"/>
+	<field name="prcVarejo1" class="java.math.BigDecimal"/>
+	<field name="prcAtacado1" class="java.math.BigDecimal"/>
+	<field name="ean1" class="java.lang.Long"/>
+	<field name="prcfidelidade1" class="java.math.BigDecimal"/>
+	<field name="DTOFTINI1" class="java.sql.Date"/>
+	<field name="DTOFTFIM1" class="java.sql.Date"/>
+	<field name="descprod2" class="java.lang.String"/>
+	<field name="qtdapartir2" class="java.lang.Long"/>
+	<field name="emb2" class="java.lang.String"/>
+	<field name="prcVarejo2" class="java.math.BigDecimal"/>
+	<field name="prcAtacado2" class="java.math.BigDecimal"/>
+	<field name="ean2" class="java.lang.Long"/>
+	<field name="prcfidelidade2" class="java.math.BigDecimal"/>
+	<field name="DTOFTINI2" class="java.sql.Date"/>
+	<field name="DTOFTFIM2" class="java.sql.Date"/>
+	<field name="descprod3" class="java.lang.String"/>
+	<field name="qtdapartir3" class="java.lang.Long"/>
+	<field name="emb3" class="java.lang.String"/>
+	<field name="prcVarejo3" class="java.math.BigDecimal"/>
+	<field name="prcAtaca" class="java.math.BigDecimal"/>
+	<field name="ean3" class="java.lang.Long"/>
+	<field name="prcfidelidade3" class="java.math.BigDecimal"/>
+	<field name="DTOFTINI3" class="java.sql.Date"/>
+	<field name="DTOFTFIM3" class="java.sql.Date"/>
+	<field name="DESCPROD" class="java.lang.String"/>
+	<field name="PRCVAREJO" class="java.lang.String"/>
+	<field name="EAN" class="java.lang.String"/>
+	<field name="DTEMIS" class="java.lang.String"/>
+	<title>
+		<band height="760" splitType="Stretch">
+			<textField>
+				<reportElement x="155" y="15" width="229" height="731" uuid="64443eca-136e-4559-a9a1-2990037cc68d"/>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="65" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESCPROD}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="297" y="15" width="219" height="745" uuid="00663c21-12dd-4b4e-9040-f2020f4ee232"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" rotation="Left">
+					<font size="160" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PRCVAREJO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="-1" width="33" height="220" uuid="4b613ea9-79cd-4173-ad5a-4a167a2a5e53"/>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{EAN}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yy">
+				<reportElement x="530" y="410" width="33" height="350" uuid="ab33d789-9f46-4f2a-a1ca-dc33de0599d7"/>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DTEMIS}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="391" y="589" width="45" height="55" uuid="59a4db81-e306-4780-a2fb-8e6d272cc6ac"/>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="25" isBold="true"/>
+				</textElement>
+				<text><![CDATA[R$]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="placa_varejo_pequena" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a221dd8e-5116-423e-954b-3be71b77716a">
+	<property name="ireport.zoom" value="0.8264462809917354"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="226"/>
+	<queryString>
+		<![CDATA[select 'BATATA' descprod,
+3 qtdapartir,
+'CX' emb,
+3.19 prcVarejo,
+100.00 prcAtacado,
+0000000001505 ean,
+3.06 prcfidelidade,
+current_date DTEMIS,
+current_date dtfim,
+
+'PEITO SADIA PERU DEF GDE PC KG' descprod1,
+3 qtdapartir1,
+'CX' emb1,
+54.90prcVarejo1,
+9.00 prcAtacado1,
+0000000002604 ean1,
+54.70 prcfidelidade1,
+current_date DTEMIS1,
+current_date dtfim1,
+
+'JILO' descprod2,
+3 qtdapartir2,
+'CX' emb2,
+2.99prcVarejo2,
+9.00 prcAtacado2,
+0000000001404 ean2,
+2.70 prcfidelidade2,
+current_date DTEMIS2,
+current_date dtfim2,
+
+'ABOBORA HIBRIDA PARTIDA KG' descprod3,
+3 qtdapartir3,
+'CX' emb3,
+1.59 prcVarejo3,
+9.00 prcAtaca,
+0000000002504 ean3,
+1.40prcfidelidade3,
+current_date DTEMIS3,
+current_date dtfim3]]>
+	</queryString>
+	<field name="DESCPROD" class="java.lang.String"/>
+	<field name="QTDAPARTIR" class="java.lang.String"/>
+	<field name="EMB" class="java.lang.String"/>
+	<field name="PRCVAREJO" class="java.lang.String"/>
+	<field name="PRCATACADO" class="java.lang.String"/>
+	<field name="EAN" class="java.lang.String"/>
+	<field name="PRCFIDELIDADE" class="java.lang.String"/>
+	<field name="DTEMIS" class="java.lang.String"/>
+	<field name="DTFIM" class="java.lang.String"/>
+	<field name="DESCPROD1" class="java.lang.String"/>
+	<field name="QTDAPARTIR1" class="java.lang.String"/>
+	<field name="EMB1" class="java.lang.String"/>
+	<field name="PRCVAREJO1" class="java.lang.String"/>
+	<field name="PRCATACADO1" class="java.lang.String"/>
+	<field name="EAN1" class="java.lang.String"/>
+	<field name="PRCFIDELIDADE1" class="java.lang.String"/>
+	<field name="DTEMIS1" class="java.lang.String"/>
+	<field name="DTFIM1" class="java.lang.String"/>
+	<field name="DESCPROD2" class="java.lang.String"/>
+	<field name="QTDAPARTIR2" class="java.lang.String"/>
+	<field name="EMB2" class="java.lang.String"/>
+	<field name="PRCVAREJO2" class="java.lang.String"/>
+	<field name="prcATACADO2" class="java.lang.String"/>
+	<field name="EAN2" class="java.lang.String"/>
+	<field name="PRCFIDELIDADE2" class="java.lang.String"/>
+	<field name="DTEMIS2" class="java.lang.String"/>
+	<field name="DTFIM2" class="java.lang.String"/>
+	<field name="DESCPROD3" class="java.lang.String"/>
+	<field name="QTDAPARTIR3" class="java.lang.String"/>
+	<field name="EMB3" class="java.lang.String"/>
+	<field name="PRCVAREJO3" class="java.lang.String"/>
+	<field name="PRCATACADO3" class="java.lang.String"/>
+	<field name="EAN3" class="java.lang.String"/>
+	<field name="PRCFIDELIDADE3" class="java.lang.String"/>
+	<field name="DTEMIS3" class="java.lang.String"/>
+	<field name="DTFIM3" class="java.lang.String"/>
+	<title>
+		<band height="802" splitType="Stretch">
+			<textField>
+				<reportElement x="1" y="236" width="285" height="77" uuid="34ff117e-de68-4592-ad65-e2bd0cce29fd"/>
+				<textElement textAlignment="Center">
+					<font size="55" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PRCVAREJO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="143" y="339" width="142" height="20" uuid="94a7a55e-5886-4ec2-a27e-8a033af183c0"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{EAN}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="0" y="339" width="143" height="20" uuid="ce1dde2d-610d-4bf0-b262-827d23e5057e"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DTEMIS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="27" y="135" width="248" height="63" uuid="643e0d98-bbfd-40cd-9046-f90acb2b4cd2"/>
+				<textElement textAlignment="Center">
+					<font size="21" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESCPROD}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="302" y="134" width="248" height="63" uuid="8b7f1f4a-d957-4e35-b25f-385c32a03ae5"/>
+				<textElement textAlignment="Center">
+					<font size="21" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESCPROD1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="406" y="339" width="149" height="20" uuid="efe8ee5d-ea36-4fc7-8a43-739b62426f21"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{EAN1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="286" y="236" width="270" height="77" uuid="60005a1d-fba3-4859-ae67-56f2cb5cadbe"/>
+				<textElement textAlignment="Center">
+					<font size="55" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PRCVAREJO1}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="285" y="339" width="121" height="20" uuid="a4f8c42c-4d1e-4b7b-a0f1-b6977b5bc112"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DTEMIS1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="614" width="285" height="73" uuid="3537faec-453c-45fc-8b5b-beb57467dd00"/>
+				<textElement textAlignment="Center">
+					<font size="55" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESCPROD2} == null ? "" : $F{PRCVAREJO2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="143" y="711" width="142" height="20" uuid="55ae76e7-6c17-400e-a2d2-a3879aa4f6da"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESCPROD2} == null ? "" : $F{EAN2}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="0" y="711" width="143" height="20" uuid="b68210ec-54d2-4055-b397-36c65a3bea64"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESCPROD2} == null ? "" : $F{DTEMIS2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="27" y="508" width="248" height="72" uuid="fab22ade-8c05-4263-ae10-3953e86dd74c"/>
+				<textElement textAlignment="Center">
+					<font size="21" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESCPROD2} == null ? "" : $F{DESCPROD2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="284" y="614" width="270" height="73" uuid="e1ed2fc6-931e-43b2-bf5d-ea53a3f600b2"/>
+				<textElement textAlignment="Center">
+					<font size="55" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESCPROD3} == null ? "" : $F{PRCVAREJO3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="302" y="508" width="248" height="72" uuid="fa54878b-0de7-4d2f-a9ae-c1886a72dd76"/>
+				<textElement textAlignment="Center">
+					<font size="21" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESCPROD3} == null ? "" : $F{DESCPROD3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="427" y="711" width="128" height="20" uuid="b339b6b2-12c8-4190-b073-bdbb1912bab6"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESCPROD3} == null ? "" : $F{EAN3}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="285" y="711" width="142" height="20" uuid="a7a284ee-5262-4bc9-b58f-1b4f15d82057"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESCPROD3} == null ? "" : $F{DTEMIS3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="317" y="616" width="25" height="28" uuid="cea7b79f-a59a-4dd4-8c5f-f8c2a480015d"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESCPROD3} == null ? "" : "R$"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="32" y="616" width="25" height="28" uuid="b431b536-5f1b-4cd6-9988-f6ce4d8a6217"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESCPROD2} == null ? "" : "R$"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="317" y="236" width="25" height="28" uuid="87de8f70-88d2-4ea3-a3ba-af1347a8d77b"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["R$"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="32" y="236" width="25" height="28" uuid="fbe647b3-25f7-4cb9-bd4c-b88d15c6f31e"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["R$"]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>
