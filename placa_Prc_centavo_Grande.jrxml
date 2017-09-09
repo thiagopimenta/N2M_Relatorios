@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="placa_testeVarejo" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a221dd8e-5116-423e-954b-3be71b77716a">
-	<property name="ireport.zoom" value="0.5"/>
+	<property name="ireport.zoom" value="0.75"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
 	<queryString>
@@ -68,7 +68,7 @@ current_date DTFIM3,
 	<field name="EAN" class="java.lang.String"/>
 	<field name="PRCFIDELIDADE" class="java.lang.String"/>
 	<field name="DTEMIS" class="java.lang.String"/>
-	<field name="DTFIM" class="java.lang.String"/>
+	<field name="DTOFTFIM" class="java.lang.String"/>
 	<field name="QTDLEV" class="java.lang.String"/>
 	<field name="QTDPAG" class="java.lang.String"/>
 	<field name="PRCLEVPAG" class="java.lang.String"/>
@@ -142,13 +142,6 @@ current_date DTFIM3,
 				</textElement>
 				<textFieldExpression><![CDATA[$F{EAN}]]></textFieldExpression>
 			</textField>
-			<textField pattern="dd/MM/yyyy">
-				<reportElement x="543" y="488" width="22" height="261" uuid="ce1dde2d-610d-4bf0-b262-827d23e5057e"/>
-				<textElement textAlignment="Center" rotation="Left">
-					<font size="12" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{DTOFTINI}]]></textFieldExpression>
-			</textField>
 			<textField>
 				<reportElement x="150" y="30" width="179" height="745" uuid="643e0d98-bbfd-40cd-9046-f90acb2b4cd2"/>
 				<textElement textAlignment="Center" rotation="Left">
@@ -168,7 +161,7 @@ current_date DTFIM3,
 				<textElement textAlignment="Center" rotation="Left">
 					<font size="32" isBold="true" isUnderline="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[" Com  mais 1 CENTAVO Leve 1 " ]]></textFieldExpression>
+				<textFieldExpression><![CDATA[" Com  mais 1 CENTAVO Leve 1 "]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="467" y="30" width="100" height="745" uuid="37e2c4fc-e85d-4498-8d4c-1995878b57ed"/>
@@ -176,6 +169,14 @@ current_date DTFIM3,
 					<font size="39" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{DESCENTAVO}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="546" y="416" width="24" height="314" uuid="7b5d4db1-eb06-4b07-aa8e-4ff623bf4c38"/>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Validade oferta:" + $F{DTOFTINI} +  " até "
++ $F{DTOFTFIM}]]></textFieldExpression>
 			</textField>
 		</band>
 	</title>

@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="placa_testeVarejo" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a221dd8e-5116-423e-954b-3be71b77716a">
 	<property name="ireport.zoom" value="0.75"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="111"/>
+	<property name="ireport.y" value="0"/>
 	<queryString>
 		<![CDATA[select 'BATATA' DESCPROD,
 3 QTDAPARTIR,
@@ -68,7 +68,7 @@ current_date DTFIM3,
 	<field name="EAN" class="java.lang.String"/>
 	<field name="PRCFIDELIDADE" class="java.lang.String"/>
 	<field name="DTEMIS" class="java.lang.String"/>
-	<field name="DTFIM" class="java.lang.String"/>
+	<field name="DTOFTFIM" class="java.lang.String"/>
 	<field name="QTDLEV" class="java.lang.String"/>
 	<field name="QTDPAG" class="java.lang.String"/>
 	<field name="PRCLEVPAG" class="java.lang.String"/>
@@ -142,15 +142,8 @@ current_date DTFIM3,
 				</textElement>
 				<textFieldExpression><![CDATA[$F{EAN}]]></textFieldExpression>
 			</textField>
-			<textField pattern="dd/MM/yyyy">
-				<reportElement x="543" y="488" width="22" height="261" uuid="ce1dde2d-610d-4bf0-b262-827d23e5057e"/>
-				<textElement textAlignment="Center" rotation="Left">
-					<font size="12" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{DTOFTINI}]]></textFieldExpression>
-			</textField>
 			<textField>
-				<reportElement x="155" y="30" width="179" height="745" uuid="643e0d98-bbfd-40cd-9046-f90acb2b4cd2"/>
+				<reportElement x="147" y="30" width="179" height="745" uuid="643e0d98-bbfd-40cd-9046-f90acb2b4cd2"/>
 				<textElement textAlignment="Center" rotation="Left">
 					<font size="55" isBold="true"/>
 				</textElement>
@@ -168,7 +161,7 @@ current_date DTFIM3,
 				<textElement textAlignment="Center" rotation="Left">
 					<font size="30" isBold="true"/>
 				</textElement>
-				<text><![CDATA[ Nesta embalagem cada unid. sai por apenas ]]></text>
+				<text><![CDATA[ Nesta embalagem cada unidade sai por apenas ]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="340" y="117" width="100" height="134" uuid="a4fcae5e-cb1d-43eb-a3a1-c55319013c00"/>
@@ -184,6 +177,14 @@ current_date DTFIM3,
 				</textElement>
 				<text><![CDATA[R$]]></text>
 			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="543" y="416" width="24" height="314" uuid="8b96556f-ec73-49b4-9053-ae28f465c6b4"/>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Validade oferta:" + $F{DTOFTINI} +  " até "
++ $F{DTOFTFIM}]]></textFieldExpression>
+			</textField>
 		</band>
 	</title>
 </jasperReport>
