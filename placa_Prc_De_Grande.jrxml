@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="placa_testeVarejo" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a221dd8e-5116-423e-954b-3be71b77716a">
 	<property name="ireport.zoom" value="0.75"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.y" value="113"/>
 	<queryString>
 		<![CDATA[select 'BATATA' DESCPROD,
 3 QTDAPARTIR,
@@ -149,14 +149,14 @@ current_date DTFIM3,
 				<textFieldExpression><![CDATA[$F{DESCPROD}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="302" y="489" width="70" height="287" uuid="036e9eee-cf26-44e5-b3d8-80abe74e24bd"/>
+				<reportElement x="313" y="489" width="70" height="287" uuid="036e9eee-cf26-44e5-b3d8-80abe74e24bd"/>
 				<textElement textAlignment="Right" rotation="Left">
 					<font size="32" isBold="true"/>
 				</textElement>
 				<text><![CDATA[De:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="278" y="221" width="104" height="297" uuid="6b54b4bb-97fe-4646-bab3-4ce948172bdc"/>
+				<reportElement x="295" y="221" width="104" height="297" uuid="6b54b4bb-97fe-4646-bab3-4ce948172bdc"/>
 				<textElement textAlignment="Center" rotation="Left">
 					<font size="52" isBold="true"/>
 				</textElement>
@@ -177,7 +177,7 @@ current_date DTFIM3,
 				<textFieldExpression><![CDATA["Ganhe " + $F{DESCDE} +"% de Desconto!!! "]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="304" y="439" width="50" height="32" uuid="aea115b2-3bfc-4417-8432-6f3dfb8306ef"/>
+				<reportElement x="315" y="439" width="50" height="32" uuid="aea115b2-3bfc-4417-8432-6f3dfb8306ef"/>
 				<textElement rotation="Left">
 					<font size="20" isBold="true"/>
 				</textElement>
@@ -198,19 +198,19 @@ current_date DTFIM3,
 				<textFieldExpression><![CDATA["Por:"]]></textFieldExpression>
 			</textField>
 			<line direction="BottomUp">
-				<reportElement x="290" y="310" width="39" height="107" uuid="634a26c5-9a76-4bfa-87ba-d37f5c563476"/>
+				<reportElement x="313" y="310" width="39" height="129" uuid="634a26c5-9a76-4bfa-87ba-d37f5c563476"/>
 				<graphicElement>
 					<pen lineWidth="1.9"/>
 				</graphicElement>
 			</line>
 			<line>
-				<reportElement x="290" y="310" width="39" height="107" uuid="f261a05c-3d1a-4c96-a564-26792f82bb96"/>
+				<reportElement x="310" y="310" width="39" height="129" uuid="f261a05c-3d1a-4c96-a564-26792f82bb96"/>
 				<graphicElement>
 					<pen lineWidth="1.9"/>
 				</graphicElement>
 			</line>
 			<staticText>
-				<reportElement x="355" y="115" width="39" height="278" uuid="d4773551-e65f-48ea-b490-d09024c0a0b9"/>
+				<reportElement x="355" y="102" width="39" height="278" uuid="d4773551-e65f-48ea-b490-d09024c0a0b9"/>
 				<textElement rotation="Left">
 					<font size="25" isBold="true" isUnderline="false" isStrikeThrough="false"/>
 				</textElement>
