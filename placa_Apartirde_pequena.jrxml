@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="placa_testeVarejo" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a221dd8e-5116-423e-954b-3be71b77716a">
 	<property name="ireport.zoom" value="0.9090909090909091"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="632"/>
+	<property name="ireport.y" value="0"/>
 	<queryString>
 		<![CDATA[select 'BATATA' DESCPROD,
 3 QTDAPARTIR,
@@ -116,14 +116,6 @@ current_date DTFIM3,
 	<field name="PRCATAC1" class="java.lang.String"/>
 	<field name="PRCATAC2" class="java.lang.String"/>
 	<field name="PRCATAC3" class="java.lang.String"/>
-	<background>
-		<band height="802">
-			<image>
-				<reportElement x="1" y="0" width="555" height="802" uuid="2090fb0e-d5e6-465a-ba72-d6f998cc0b8e"/>
-				<imageExpression><![CDATA["C:\\Users\\thiago.pimenta\\Documents\\Scan\\SCAN_20170905_160221701.jpg"]]></imageExpression>
-			</image>
-		</band>
-	</background>
 	<title>
 		<band height="802" splitType="Stretch">
 			<rectangle>
