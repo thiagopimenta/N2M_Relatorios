@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="etiq_padrao_1A99" pageWidth="330" pageHeight="100" columnWidth="330" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="a221dd8e-5116-423e-954b-3be71b77716a">
+	<property name="ireport.zoom" value="0.8264462809917354"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select 'ASSADEIRA VD RET 4L NADIR' DESCPROD,
+ 3 QTDAP,
+'CX' EMB,
+'34,99' PRCVAREJO,
+02.99 PRCATAC,
+'07891155036470' EAN,
+249.59 PRCFIDELIDADE,
+current_date DTOFTINI,
+current_date DTOFTFIM,
+current_date DTEMIS,
+4 QTDLEV,
+3 QTDPAG,
+2.99 PRCLEVPAG,
+' ' QTDAPARTIR]]>
+	</queryString>
+	<field name="DESCPROD" class="java.lang.String"/>
+	<field name="EMB" class="java.lang.String"/>
+	<field name="PRCVAREJO" class="java.lang.String"/>
+	<field name="EAN" class="java.lang.String"/>
+	<title>
+		<band height="100" splitType="Stretch">
+			<textField>
+				<reportElement x="172" y="29" width="158" height="59" uuid="34ff117e-de68-4592-ad65-e2bd0cce29fd"/>
+				<textElement>
+					<font fontName="Myriad Pro" size="50" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PRCVAREJO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="9" y="0" width="318" height="22" uuid="643e0d98-bbfd-40cd-9046-f90acb2b4cd2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Myriad Pro Light Cond" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESCPROD}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="243" y="24" width="63" height="20" uuid="3e885dad-bcb6-48b7-8ba2-7562f404e66e"/>
+				<textElement>
+					<font fontName="Myriad Pro" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Valor Unitário]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="22" width="100" height="36" uuid="7dc56c1e-0edc-4e14-a9df-e2ac9a7c9e52"/>
+				<textElement>
+					<font fontName="Myriad Pro" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[DÚVIDAS?
+FAVOR UTILIZAR O
+CONSULTA PREÇO]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement mode="Transparent" x="0" y="53" width="120" height="30" uuid="7bc577cd-2e1b-42fa-8f99-743b98cc6576"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128" drawText="true" checksumRequired="false" barHeight="45">
+					<jr:codeExpression><![CDATA[$F{EAN}]]></jr:codeExpression>
+					<jr:applicationIdentifierExpression><![CDATA[$F{EAN}]]></jr:applicationIdentifierExpression>
+				</jr:barbecue>
+			</componentElement>
+			<staticText>
+				<reportElement x="138" y="52" width="30" height="23" uuid="71633f86-1a7b-45f4-91e7-0d886ebba13f"/>
+				<textElement>
+					<font fontName="Myriad Pro" size="23" isBold="true"/>
+				</textElement>
+				<text><![CDATA[R$]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>
