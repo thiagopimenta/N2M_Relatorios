@@ -35,12 +35,12 @@ current_date DTEMIS,
 			<textField>
 				<reportElement x="9" y="0" width="318" height="22" uuid="643e0d98-bbfd-40cd-9046-f90acb2b4cd2"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Myriad Pro Light Cond" size="18" isBold="true"/>
+					<font fontName="Myriad Pro SemiCond" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{DESCPROD}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="243" y="24" width="63" height="20" uuid="3e885dad-bcb6-48b7-8ba2-7562f404e66e"/>
+				<reportElement x="232" y="24" width="63" height="20" uuid="3e885dad-bcb6-48b7-8ba2-7562f404e66e"/>
 				<textElement>
 					<font fontName="Myriad Pro" size="8" isBold="false"/>
 				</textElement>
@@ -56,7 +56,7 @@ FAVOR UTILIZAR O
 CONSULTA PREÇO]]></text>
 			</staticText>
 			<componentElement>
-				<reportElement mode="Transparent" x="0" y="53" width="120" height="30" uuid="7bc577cd-2e1b-42fa-8f99-743b98cc6576"/>
+				<reportElement mode="Transparent" x="2" y="47" width="120" height="30" uuid="7bc577cd-2e1b-42fa-8f99-743b98cc6576"/>
 				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128" drawText="true" checksumRequired="false" barHeight="45">
 					<jr:codeExpression><![CDATA[$F{EAN}]]></jr:codeExpression>
 					<jr:applicationIdentifierExpression><![CDATA[$F{EAN}]]></jr:applicationIdentifierExpression>

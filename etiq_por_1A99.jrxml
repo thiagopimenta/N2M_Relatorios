@@ -23,19 +23,20 @@ current_date DTEMIS,
 	<field name="PRCVAREJO" class="java.lang.String"/>
 	<field name="EAN" class="java.lang.String"/>
 	<field name="QTDPOR" class="java.lang.String"/>
+	<field name="PRCPOR" class="java.lang.String"/>
 	<title>
 		<band height="100" splitType="Stretch">
 			<textField>
-				<reportElement x="242" y="62" width="65" height="24" uuid="34ff117e-de68-4592-ad65-e2bd0cce29fd"/>
+				<reportElement x="242" y="58" width="65" height="24" uuid="34ff117e-de68-4592-ad65-e2bd0cce29fd"/>
 				<textElement>
 					<font fontName="Myriad Pro" size="18" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{PRCVAREJO}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{PRCPOR}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="12" y="0" width="318" height="22" uuid="643e0d98-bbfd-40cd-9046-f90acb2b4cd2"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Myriad Pro" size="18" isBold="true"/>
+					<font fontName="Myriad Pro SemiCond" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{DESCPROD}]]></textFieldExpression>
 			</textField>
@@ -49,24 +50,24 @@ FAVOR UTILIZAR O
 CONSULTA PREÇO]]></text>
 			</staticText>
 			<componentElement>
-				<reportElement mode="Transparent" x="-2" y="53" width="132" height="30" uuid="7bc577cd-2e1b-42fa-8f99-743b98cc6576"/>
-				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128" drawText="true" checksumRequired="false">
+				<reportElement mode="Transparent" x="-2" y="47" width="120" height="30" uuid="7bc577cd-2e1b-42fa-8f99-743b98cc6576"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128" drawText="true" checksumRequired="false" barHeight="45">
 					<jr:codeExpression><![CDATA[$F{EAN}]]></jr:codeExpression>
 					<jr:applicationIdentifierExpression><![CDATA[$F{EAN}]]></jr:applicationIdentifierExpression>
 				</jr:barbecue>
 			</componentElement>
 			<staticText>
-				<reportElement x="207" y="62" width="30" height="23" uuid="71633f86-1a7b-45f4-91e7-0d886ebba13f"/>
+				<reportElement x="207" y="58" width="30" height="23" uuid="71633f86-1a7b-45f4-91e7-0d886ebba13f"/>
 				<textElement>
 					<font fontName="Myriad Pro" size="18" isBold="true"/>
 				</textElement>
 				<text><![CDATA[R$]]></text>
 			</staticText>
 			<rectangle>
-				<reportElement x="179" y="22" width="140" height="40" backcolor="#000000" uuid="e2aec12e-1472-49f9-87d0-84803b5b95af"/>
+				<reportElement x="179" y="22" width="140" height="35" backcolor="#000000" uuid="e2aec12e-1472-49f9-87d0-84803b5b95af"/>
 			</rectangle>
 			<textField>
-				<reportElement x="179" y="22" width="140" height="40" forecolor="#FFFFFF" uuid="474706ce-3a58-435d-a253-9ffae4bd3ad4"/>
+				<reportElement x="162" y="22" width="157" height="35" forecolor="#FFFFFF" uuid="474706ce-3a58-435d-a253-9ffae4bd3ad4"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Myriad Pro" size="30" isBold="true"/>
 				</textElement>
